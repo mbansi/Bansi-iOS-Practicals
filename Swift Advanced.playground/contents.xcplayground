@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Enumeration'/>
+        <page name='Class'/>
+        <page name='Struct'/>
+        <page name='Properties'/>
+        <page name='Inheritance'/>
+        <page name='Subscript'/>
+        <page name='Error handling'/>
+        <page name='Extension'/>
+        <page name='Breakfast'/>
+        <page name='Leap year'/>
+        <page name='Hitpoint'/>
+        <page name='AverageGrade'/>
+        <page name='Tipping'/>
+    </pages>
+</playground>
