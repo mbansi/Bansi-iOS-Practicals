@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5483EB280D262F00D6DE31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5483EA280D262F00D6DE31 /* Constants.swift */; };
 		5FA271CD278D9A120086F184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA271CC278D9A120086F184 /* AppDelegate.swift */; };
 		5FA271CF278D9A120086F184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA271CE278D9A120086F184 /* SceneDelegate.swift */; };
 		5FA271D1278D9A120086F184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA271D0278D9A120086F184 /* ViewController.swift */; };
 		5FA271D4278D9A120086F184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA271D2278D9A120086F184 /* Main.storyboard */; };
 		5FA271D6278D9A130086F184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA271D5278D9A130086F184 /* Assets.xcassets */; };
 		5FA271D9278D9A130086F184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA271D7278D9A130086F184 /* LaunchScreen.storyboard */; };
+		5FD71CEB27CCFB8F009DF27D /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5483EA280D262F00D6DE31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5FA271C9278D9A120086F184 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA271CC278D9A120086F184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA271CE278D9A120086F184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5FA271D5278D9A130086F184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA271D8278D9A130086F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FA271DA278D9A130086F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		5FA271CB278D9A120086F184 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FEC169B27C60CC30075383B /* Basic AutoLayout */,
+				5F5483EA280D262F00D6DE31 /* Constants.swift */,
 				5FA271CC278D9A120086F184 /* AppDelegate.swift */,
 				5FA271CE278D9A120086F184 /* SceneDelegate.swift */,
 				5FA271D0278D9A120086F184 /* ViewController.swift */,
@@ -65,6 +71,14 @@
 				5FA271DA278D9A130086F184 /* Info.plist */,
 			);
 			path = MyApp;
+			sourceTree = "<group>";
+		};
+		5FEC169B27C60CC30075383B /* Basic AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */,
+			);
+			path = "Basic AutoLayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD71CEB27CCFB8F009DF27D /* LoginScreen.storyboard in Resources */,
 				5FA271D9278D9A130086F184 /* LaunchScreen.storyboard in Resources */,
 				5FA271D6278D9A130086F184 /* Assets.xcassets in Resources */,
 				5FA271D4278D9A120086F184 /* Main.storyboard in Resources */,
@@ -141,6 +156,7 @@
 				5FA271D1278D9A120086F184 /* ViewController.swift in Sources */,
 				5FA271CD278D9A120086F184 /* AppDelegate.swift in Sources */,
 				5FA271CF278D9A120086F184 /* SceneDelegate.swift in Sources */,
+				5F5483EB280D262F00D6DE31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
