@@ -21,6 +21,6 @@ class CricketerViewCell: UICollectionViewCell {
     //MARK: - Functions
     func configCell(data: CricketerModel){
         lblName.text = data.cricketerName
-       imgCricketer.image = UIImage(named: data.cricketerImage ?? "")
+        imgCricketer.image = UIImage(named: data.cricketerImage )
     }
 }

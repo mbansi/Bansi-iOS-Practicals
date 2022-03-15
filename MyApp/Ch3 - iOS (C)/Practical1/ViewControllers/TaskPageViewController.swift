@@ -28,7 +28,7 @@ class TaskPageViewController: UIPageViewController {
     }
     
     func viewControllerWith(name: String) -> UIViewController{
-        return UIStoryboard(name: Constants.practical1, bundle: nil).instantiateViewController(withIdentifier: name)
+        return UIStoryboard(name: Constants.practical1StoryBoard, bundle: nil).instantiateViewController(withIdentifier: name)
     }
     
     func setUpControllers(){
