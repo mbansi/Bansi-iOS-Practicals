@@ -22,5 +22,9 @@ class ViewController: UIViewController {
     @IBAction func btnUIComponents(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.uiComponents, sender: self)
     }
+
+    @IBAction func openNavigationController(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.navigation, sender: self)
+    }
 }
 

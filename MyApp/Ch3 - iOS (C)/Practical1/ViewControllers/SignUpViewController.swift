@@ -31,7 +31,7 @@ class SignUpViewController: UIViewController {
 
         imgUser.layer.cornerRadius = 40
         imgUser.layer.borderWidth = 1
-        imgUser.layer.borderColor = UIColor.black.cgColor
+        imgUser.layer.borderColor = UIColor.systemBlue.cgColor
 
         tfEmail.layer.cornerRadius = 3
         tfEmail.layer.borderColor = UIColor.systemBlue.cgColor

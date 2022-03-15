@@ -15,6 +15,7 @@ struct Constants {
     //MARK: - Chapter 3 - UI Components
     static let practical1 = "practical1"
     static let practical2 = "practical2"
+    static let practical1StoryBoard = "Practical1"
     static let tableViewCellName = "TableViewCell"
     static let tableViewCell = "tableViewCell"
     static let checked = "checked"
@@ -45,4 +46,15 @@ struct Constants {
     static let one: CGFloat = 1
     static let googleUrl = "https://google.com"
     
+    static let width200 = 200
+    static let height50 = 50
+    static let cellIdentifier = "cellIdentifier"
+    static let navigation = "navigation"
+    static let navigationController = "Navigation"
+    static let secondViewController = "secondViewController"
+    static let homeViewController = "homeViewController"
+    static let firstViewController = "firstViewController"
+    static let forthViewController = "forthViewController"
+    static let main = "Main"
+    static let viewController = "ViewController"
 }
