@@ -12,3 +12,16 @@
 "Goa" = "Goa";
 "Kerala" = "Kerala";
 "Shimla" = "Shimla";
+
+
+"No email" = "No email";
+"Please enter your email" = "Please enter your email";
+"Invalid Email" = "Invalid Email";
+"Please enter a proper email" = "Please enter a proper email";
+"No password" = "No password";
+"Please enter your password" = "Please enter your password";
+"OK" = "OK";
+"Invalid Name" = "Invalid Name";
+"Please enter your name" = "Please enter your name";
+"Invalid Job" = "Invalid Job";
+"Please enter your job" = "Please enter your job";

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="100" id="KGk-i7-Jjw" customClass="UserCell" customModule="MyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VyZ-Uh-7Wo">
+                        <rect key="frame" x="16.5" y="29.5" width="100" height="134.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrU-iF-hSL">
+                        <rect key="frame" x="133" y="37.5" width="200" height="41.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmI-2T-nwE">
+                        <rect key="frame" x="133" y="89" width="200" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VyZ-Uh-7Wo" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.693878" id="1Fl-j2-fGQ"/>
+                    <constraint firstItem="GrU-iF-hSL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="4uN-Un-ylN"/>
+                    <constraint firstItem="GrU-iF-hSL" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.214286" id="Bab-Tu-QrL"/>
+                    <constraint firstItem="VyZ-Uh-7Wo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.4" id="HxE-VU-DVt"/>
+                    <constraint firstItem="qmI-2T-nwE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="QDj-m7-Axl"/>
+                    <constraint firstItem="qmI-2T-nwE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wb8-mU-FND"/>
+                    <constraint firstItem="qmI-2T-nwE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.4" id="X8M-Z0-Vs4"/>
+                    <constraint firstItem="VyZ-Uh-7Wo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c0c-9W-kLx"/>
+                    <constraint firstItem="GrU-iF-hSL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.6" id="ua8-Jw-Kuz"/>
+                    <constraint firstItem="qmI-2T-nwE" firstAttribute="top" secondItem="GrU-iF-hSL" secondAttribute="bottom" constant="10" id="v26-nm-ck2"/>
+                    <constraint firstItem="GrU-iF-hSL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.4" id="xv8-m3-1Fp"/>
+                    <constraint firstItem="VyZ-Uh-7Wo" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="y3O-G3-wfZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="qmI-2T-nwE" firstAttribute="height" secondItem="njF-e1-oar" secondAttribute="height" multiplier="0.2" id="cfO-bN-Lz6"/>
+            </constraints>
+            <connections>
+                <outlet property="imgUser" destination="VyZ-Uh-7Wo" id="eVz-ou-N0c"/>
+                <outlet property="lblEmail" destination="qmI-2T-nwE" id="b2r-qE-L8j"/>
+                <outlet property="lblName" destination="GrU-iF-hSL" id="FZS-Et-vX5"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="0.0"/>
+        </tableViewCell>
+    </objects>
+</document>

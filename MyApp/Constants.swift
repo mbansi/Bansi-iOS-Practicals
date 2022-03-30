@@ -56,4 +56,32 @@ struct Constants {
     static let forthViewController = "forthViewController"
     static let main = "Main"
     static let viewController = "ViewController"
+    
+    static let login = "Login"
+    static let singleUserViewController = "singleUserViewController"
+    static let listViewController = "listViewController"
+    static let userCell = "userCell"
+    static let createUserViewController = "createUserViewController"
+    static let userCellName = "UserCell"
+    static let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    
+    static let url = "https://reqres.in/api/login"
+    static let matchEmail = "SELF MATCHES %@"
+    static let delayUrl = "https://reqres.in/api/users?delay=3"
+    static let singleUserUrl = "https://reqres.in/api/users/"
+    static let usersUrl = "https://reqres.in/api/users"
+    static let post = "POST"
+    static let perPage = "per_page"
+    static let get = "GET"
+    static let totalPages = "total_pages"
+    static let applicationJson = "application/json"
+    static let contentType = "Content-Type"
+    static let parameterName = "name"
+    static let parameterJob = "job"
+    
+
+    static let statusCode = 200
+    static let webServices = "webServices"
+//  Created by Bansi Mamtora on 20/04/22.
+
 }
