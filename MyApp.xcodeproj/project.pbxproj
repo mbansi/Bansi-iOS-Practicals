@@ -15,6 +15,31 @@
 		5FA271D6278D9A130086F184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA271D5278D9A130086F184 /* Assets.xcassets */; };
 		5FA271D9278D9A130086F184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA271D7278D9A130086F184 /* LaunchScreen.storyboard */; };
 		5FD71CEB27CCFB8F009DF27D /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */; };
+		5FFDBD0C2812CDD400023D52 /* MainComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBCE92812CDD400023D52 /* MainComponents.storyboard */; };
+		5FFDBD0D2812CDD400023D52 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCEC2812CDD400023D52 /* LocationModel.swift */; };
+		5FFDBD0E2812CDD400023D52 /* CricketerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCED2812CDD400023D52 /* CricketerViewCell.swift */; };
+		5FFDBD0F2812CDD400023D52 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCEF2812CDD400023D52 /* ListViewController.swift */; };
+		5FFDBD102812CDD400023D52 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF02812CDD400023D52 /* GridViewController.swift */; };
+		5FFDBD112812CDD400023D52 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF12812CDD400023D52 /* MapViewController.swift */; };
+		5FFDBD122812CDD400023D52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF22812CDD400023D52 /* DetailViewController.swift */; };
+		5FFDBD132812CDD400023D52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF32812CDD400023D52 /* HomeViewController.swift */; };
+		5FFDBD142812CDD400023D52 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF42812CDD400023D52 /* WebViewController.swift */; };
+		5FFDBD152812CDD400023D52 /* GridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF52812CDD400023D52 /* GridViewController.xib */; };
+		5FFDBD162812CDD400023D52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF62812CDD400023D52 /* TabBarViewController.swift */; };
+		5FFDBD172812CDD400023D52 /* Practical2_3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF72812CDD400023D52 /* Practical2_3.storyboard */; };
+		5FFDBD192812CDD400023D52 /* MainComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCF92812CDD400023D52 /* MainComponentsViewController.swift */; };
+		5FFDBD1A2812CDD400023D52 /* CricketerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCFC2812CDD400023D52 /* CricketerModel.swift */; };
+		5FFDBD1B2812CDD400023D52 /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCFE2812CDD400023D52 /* EvenTableViewCell.swift */; };
+		5FFDBD1C2812CDD400023D52 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBCFF2812CDD400023D52 /* TableViewCell.swift */; };
+		5FFDBD1D2812CDD400023D52 /* EvenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBD002812CDD400023D52 /* EvenTableViewCell.xib */; };
+		5FFDBD1E2812CDD400023D52 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBD012812CDD400023D52 /* TableViewCell.xib */; };
+		5FFDBD1F2812CDD400023D52 /* Practical1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBD022812CDD400023D52 /* Practical1.storyboard */; };
+		5FFDBD202812CDD400023D52 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD042812CDD400023D52 /* CustomTextField.swift */; };
+		5FFDBD212812CDD400023D52 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD052812CDD400023D52 /* CustomTextView.swift */; };
+		5FFDBD222812CDD400023D52 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD072812CDD400023D52 /* SignUpViewController.swift */; };
+		5FFDBD232812CDD400023D52 /* TaskPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD082812CDD400023D52 /* TaskPageViewController.swift */; };
+		5FFDBD242812CDD500023D52 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD092812CDD400023D52 /* TableViewController.swift */; };
+		5FFDBD252812CDD500023D52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD0A2812CDD400023D52 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +53,31 @@
 		5FA271D8278D9A130086F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FA271DA278D9A130086F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		5FFDBCE92812CDD400023D52 /* MainComponents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainComponents.storyboard; sourceTree = "<group>"; };
+		5FFDBCEC2812CDD400023D52 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		5FFDBCED2812CDD400023D52 /* CricketerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CricketerViewCell.swift; sourceTree = "<group>"; };
+		5FFDBCEF2812CDD400023D52 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF02812CDD400023D52 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF12812CDD400023D52 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF22812CDD400023D52 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF32812CDD400023D52 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF42812CDD400023D52 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF52812CDD400023D52 /* GridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewController.xib; sourceTree = "<group>"; };
+		5FFDBCF62812CDD400023D52 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5FFDBCF72812CDD400023D52 /* Practical2_3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Practical2_3.storyboard; sourceTree = "<group>"; };
+		5FFDBCF92812CDD400023D52 /* MainComponentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainComponentsViewController.swift; sourceTree = "<group>"; };
+		5FFDBCFC2812CDD400023D52 /* CricketerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CricketerModel.swift; sourceTree = "<group>"; };
+		5FFDBCFE2812CDD400023D52 /* EvenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
+		5FFDBCFF2812CDD400023D52 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5FFDBD002812CDD400023D52 /* EvenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EvenTableViewCell.xib; sourceTree = "<group>"; };
+		5FFDBD012812CDD400023D52 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		5FFDBD022812CDD400023D52 /* Practical1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Practical1.storyboard; sourceTree = "<group>"; };
+		5FFDBD042812CDD400023D52 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5FFDBD052812CDD400023D52 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		5FFDBD072812CDD400023D52 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5FFDBD082812CDD400023D52 /* TaskPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPageViewController.swift; sourceTree = "<group>"; };
+		5FFDBD092812CDD400023D52 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5FFDBD0A2812CDD400023D52 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +110,7 @@
 		5FA271CB278D9A120086F184 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FFDBCE72812CDD400023D52 /* Ch3 - iOS (C) */,
 				5FEC169B27C60CC30075383B /* Basic AutoLayout */,
 				5F5483EA280D262F00D6DE31 /* Constants.swift */,
 				5FA271CC278D9A120086F184 /* AppDelegate.swift */,
@@ -79,6 +130,102 @@
 				5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */,
 			);
 			path = "Basic AutoLayout";
+			sourceTree = "<group>";
+		};
+		5FFDBCE72812CDD400023D52 /* Ch3 - iOS (C) */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCE92812CDD400023D52 /* MainComponents.storyboard */,
+				5FFDBCEA2812CDD400023D52 /* Practical2_3 */,
+				5FFDBCF92812CDD400023D52 /* MainComponentsViewController.swift */,
+				5FFDBCFA2812CDD400023D52 /* Practical1 */,
+			);
+			path = "Ch3 - iOS (C)";
+			sourceTree = "<group>";
+		};
+		5FFDBCEA2812CDD400023D52 /* Practical2_3 */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCEB2812CDD400023D52 /* ViewModel */,
+				5FFDBCED2812CDD400023D52 /* CricketerViewCell.swift */,
+				5FFDBCEE2812CDD400023D52 /* ViewControllers */,
+				5FFDBCF72812CDD400023D52 /* Practical2_3.storyboard */,
+			);
+			path = Practical2_3;
+			sourceTree = "<group>";
+		};
+		5FFDBCEB2812CDD400023D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCEC2812CDD400023D52 /* LocationModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FFDBCEE2812CDD400023D52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCEF2812CDD400023D52 /* ListViewController.swift */,
+				5FFDBCF02812CDD400023D52 /* GridViewController.swift */,
+				5FFDBCF12812CDD400023D52 /* MapViewController.swift */,
+				5FFDBCF22812CDD400023D52 /* DetailViewController.swift */,
+				5FFDBCF32812CDD400023D52 /* HomeViewController.swift */,
+				5FFDBCF42812CDD400023D52 /* WebViewController.swift */,
+				5FFDBCF52812CDD400023D52 /* GridViewController.xib */,
+				5FFDBCF62812CDD400023D52 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FFDBCFA2812CDD400023D52 /* Practical1 */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCFB2812CDD400023D52 /* ViewModel */,
+				5FFDBCFD2812CDD400023D52 /* Cells */,
+				5FFDBD022812CDD400023D52 /* Practical1.storyboard */,
+				5FFDBD032812CDD400023D52 /* CustomClasses */,
+				5FFDBD062812CDD400023D52 /* ViewControllers */,
+			);
+			path = Practical1;
+			sourceTree = "<group>";
+		};
+		5FFDBCFB2812CDD400023D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCFC2812CDD400023D52 /* CricketerModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FFDBCFD2812CDD400023D52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBCFE2812CDD400023D52 /* EvenTableViewCell.swift */,
+				5FFDBCFF2812CDD400023D52 /* TableViewCell.swift */,
+				5FFDBD002812CDD400023D52 /* EvenTableViewCell.xib */,
+				5FFDBD012812CDD400023D52 /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5FFDBD032812CDD400023D52 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBD042812CDD400023D52 /* CustomTextField.swift */,
+				5FFDBD052812CDD400023D52 /* CustomTextView.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		5FFDBD062812CDD400023D52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBD072812CDD400023D52 /* SignUpViewController.swift */,
+				5FFDBD082812CDD400023D52 /* TaskPageViewController.swift */,
+				5FFDBD092812CDD400023D52 /* TableViewController.swift */,
+				5FFDBD0A2812CDD400023D52 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +288,14 @@
 			files = (
 				5FD71CEB27CCFB8F009DF27D /* LoginScreen.storyboard in Resources */,
 				5FA271D9278D9A130086F184 /* LaunchScreen.storyboard in Resources */,
+				5FFDBD1F2812CDD400023D52 /* Practical1.storyboard in Resources */,
+				5FFDBD172812CDD400023D52 /* Practical2_3.storyboard in Resources */,
+				5FFDBD152812CDD400023D52 /* GridViewController.xib in Resources */,
+				5FFDBD1E2812CDD400023D52 /* TableViewCell.xib in Resources */,
+				5FFDBD0C2812CDD400023D52 /* MainComponents.storyboard in Resources */,
 				5FA271D6278D9A130086F184 /* Assets.xcassets in Resources */,
 				5FA271D4278D9A120086F184 /* Main.storyboard in Resources */,
+				5FFDBD1D2812CDD400023D52 /* EvenTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +306,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFDBD222812CDD400023D52 /* SignUpViewController.swift in Sources */,
+				5FFDBD122812CDD400023D52 /* DetailViewController.swift in Sources */,
 				5FA271D1278D9A120086F184 /* ViewController.swift in Sources */,
+				5FFDBD192812CDD400023D52 /* MainComponentsViewController.swift in Sources */,
+				5FFDBD202812CDD400023D52 /* CustomTextField.swift in Sources */,
+				5FFDBD1C2812CDD400023D52 /* TableViewCell.swift in Sources */,
 				5FA271CD278D9A120086F184 /* AppDelegate.swift in Sources */,
+				5FFDBD162812CDD400023D52 /* TabBarViewController.swift in Sources */,
+				5FFDBD232812CDD400023D52 /* TaskPageViewController.swift in Sources */,
+				5FFDBD112812CDD400023D52 /* MapViewController.swift in Sources */,
+				5FFDBD0E2812CDD400023D52 /* CricketerViewCell.swift in Sources */,
+				5FFDBD252812CDD500023D52 /* LoginViewController.swift in Sources */,
+				5FFDBD212812CDD400023D52 /* CustomTextView.swift in Sources */,
 				5FA271CF278D9A120086F184 /* SceneDelegate.swift in Sources */,
+				5FFDBD0D2812CDD400023D52 /* LocationModel.swift in Sources */,
+				5FFDBD0F2812CDD400023D52 /* ListViewController.swift in Sources */,
 				5F5483EB280D262F00D6DE31 /* Constants.swift in Sources */,
+				5FFDBD1B2812CDD400023D52 /* EvenTableViewCell.swift in Sources */,
+				5FFDBD242812CDD500023D52 /* TableViewController.swift in Sources */,
+				5FFDBD102812CDD400023D52 /* GridViewController.swift in Sources */,
+				5FFDBD1A2812CDD400023D52 /* CricketerModel.swift in Sources */,
+				5FFDBD142812CDD400023D52 /* WebViewController.swift in Sources */,
+				5FFDBD132812CDD400023D52 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,5 +19,8 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: Constants.basicAutoLayout , sender: self)
     }
     
+    @IBAction func btnUIComponents(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.uiComponents, sender: self)
+    }
 }
 
