@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func openAutoLayouts(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.basicAutoLayout , sender: self)
+    }
+    
 }
 
