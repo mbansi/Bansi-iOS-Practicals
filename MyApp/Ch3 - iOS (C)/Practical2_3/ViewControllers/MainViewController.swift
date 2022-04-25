@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class MainViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var searchBar: UISearchBar!
@@ -94,7 +94,7 @@ class HomeViewController: UIViewController {
 
 //MARK: - Extensions
 //MARK: - Collection DataSource
-extension HomeViewController: UICollectionViewDataSource {
+extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return isSearchActive == true ? searchResult.count : initialdata.count
     }
@@ -110,7 +110,7 @@ extension HomeViewController: UICollectionViewDataSource {
 }
 
 //MARK: - Collection Delegate
-extension HomeViewController: UICollectionViewDelegate {
+extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         cName = initialdata[indexPath.row].cricketerName
         cImage = initialdata[indexPath.row].cricketerImage
@@ -119,14 +119,14 @@ extension HomeViewController: UICollectionViewDelegate {
 }
 
 //MARK: - Collection DelegateFlowLayout
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
+extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.size.width/3, height: 120)
     }
 }
 
 //MARK: - Table DataSource
-extension HomeViewController: UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -146,7 +146,7 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 //MARK: - Table Delegate
-extension HomeViewController: UITableViewDelegate {
+extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         cName = allData[indexPath.row].cricketerName
         cImage = allData[indexPath.row].cricketerImage
@@ -155,7 +155,7 @@ extension HomeViewController: UITableViewDelegate {
 }
 
 //MARK: - Search Delegate
-extension HomeViewController: UISearchBarDelegate {
+extension MainViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         isSearchActive = true
         searchResult = searchText.isEmpty ? allData : allData.filter { (cricketer: CricketerModel) in
