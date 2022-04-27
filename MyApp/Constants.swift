@@ -45,4 +45,15 @@ struct Constants {
     static let one: CGFloat = 1
     static let googleUrl = "https://google.com"
     
+    static let width200 = 200
+    static let height50 = 50
+    static let cellIdentifier = "cellIdentifier"
+    static let navigation = "navigation"
+    static let navigationController = "Navigation"
+    static let secondViewController = "secondViewController"
+    static let homeViewController = "homeViewController"
+    static let firstViewController = "firstViewController"
+    static let forthViewController = "forthViewController"
+    static let main = "Main"
+    static let viewController = "ViewController"
 }
