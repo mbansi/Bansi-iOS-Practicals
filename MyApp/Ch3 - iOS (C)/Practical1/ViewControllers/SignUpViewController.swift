@@ -8,7 +8,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-   
+    
     // MARK: - Outlets
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var imgUser: UIImageView!
@@ -28,22 +28,29 @@ class SignUpViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         imgUser.layer.cornerRadius = 40
         imgUser.layer.borderWidth = 1
-        imgUser.layer.borderColor = UIColor.black.cgColor
-
+        imgUser.layer.borderColor = UIColor.systemBlue.cgColor
+        
         tfEmail.layer.cornerRadius = 3
         tfEmail.layer.borderColor = UIColor.systemBlue.cgColor
         tfEmail.layer.borderWidth = 1
-
+        self.tfEmail.delegate = self
+        tfEmail.returnKeyType = .next
+        
         tfPassword.layer.cornerRadius = 3
         tfPassword.layer.borderColor = UIColor.systemBlue.cgColor
         tfPassword.layer.borderWidth = 1
-
+        self.tfPassword.delegate = self
+        tfPassword.returnKeyType = .done
+        
+        
         tvBio.layer.borderColor = UIColor.systemBlue.cgColor
         tvBio.layer.borderWidth = 1
         tvBio.layer.cornerRadius = 3
+        tvBio.returnKeyType = .done
     }
     
     // MARK: - Actions
@@ -69,5 +76,29 @@ class SignUpViewController: UIViewController {
             rbMale.isSelected = false
             rbFemale.isSelected = true
         }
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.tfEmail:
+            self.tfPassword.becomeFirstResponder()
+        case self.tfPassword:
+            self.tfPassword.resignFirstResponder()
+        case self.tvBio:
+            self.tvBio.resignFirstResponder()
+        default:
+            self.tfEmail.resignFirstResponder()
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
     }
 }

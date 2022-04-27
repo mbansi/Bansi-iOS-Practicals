@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CricketerModel: NSObject {
+class CricketerModel {
     
     //MARK: - Variables
     var cricketerName: String

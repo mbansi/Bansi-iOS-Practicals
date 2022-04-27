@@ -15,6 +15,7 @@ struct Constants {
     //MARK: - Chapter 3 - UI Components
     static let practical1 = "practical1"
     static let practical2 = "practical2"
+    static let practical1StoryBoard = "Practical1"
     static let tableViewCellName = "TableViewCell"
     static let tableViewCell = "tableViewCell"
     static let checked = "checked"
