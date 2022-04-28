@@ -28,8 +28,10 @@ class SignUpViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+//        view.addGestureRecognizer(tap)
+        
+        self.dismissKeyboard(view)
         imgUser.layer.cornerRadius = 40
         imgUser.layer.borderWidth = 1
         imgUser.layer.borderColor = UIColor.systemBlue.cgColor
@@ -90,10 +92,10 @@ class SignUpViewController: UIViewController {
             self.tfEmail.resignFirstResponder()
         }
     }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
+//
+//    @objc func dismissKeyboard() {
+//        view.endEditing(true)
+//    }
 }
 
 extension SignUpViewController: UITextFieldDelegate {

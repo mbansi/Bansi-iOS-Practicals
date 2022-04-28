@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openAutoLayouts(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.basicAutoLayout , sender: self)
+        if let login = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginScreenViewController") as? LoginScreenViewController{
+            navigationController?.pushViewController(login, animated: true)
+        }
+      //  performSegue(withIdentifier: Constants.basicAutoLayout , sender: self)
     }
     
     @IBAction func btnUIComponents(_ sender: UIButton) {

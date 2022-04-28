@@ -17,20 +17,19 @@ class WebViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        activityIndicator.startAnimating()
         displayActivityIndicator()
     }
     
     //MARK: - Functions
     func displayActivityIndicator() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
-            self.activityIndicator.stopAnimating()
-            
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
             guard let url = URL(string: Constants.googleUrl) else {
                 return
             }
             let urlRequest = URLRequest(url: url)
             self.webView.load(urlRequest)
+            self.activityIndicator.stopAnimating()
         }
     }
 }

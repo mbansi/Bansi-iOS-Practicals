@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F425A11281A9871009185F4 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F425A10281A9870009185F4 /* LoginScreenViewController.swift */; };
+		5F425A15281A9A11009185F4 /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F425A14281A9A11009185F4 /* SignUpScreenViewController.swift */; };
+		5F425A17281A9A21009185F4 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F425A16281A9A21009185F4 /* MusicViewController.swift */; };
+		5F425A19281AA255009185F4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F425A18281AA255009185F4 /* Helper.swift */; };
 		5F5483EB280D262F00D6DE31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5483EA280D262F00D6DE31 /* Constants.swift */; };
 		5FA271CD278D9A120086F184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA271CC278D9A120086F184 /* AppDelegate.swift */; };
 		5FA271CF278D9A120086F184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA271CE278D9A120086F184 /* SceneDelegate.swift */; };
@@ -54,6 +58,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F425A10281A9870009185F4 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		5F425A14281A9A11009185F4 /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
+		5F425A16281A9A21009185F4 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		5F425A18281AA255009185F4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5F5483EA280D262F00D6DE31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5FA271C9278D9A120086F184 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA271CC278D9A120086F184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 				5FA271D5278D9A130086F184 /* Assets.xcassets */,
 				5FA271D7278D9A130086F184 /* LaunchScreen.storyboard */,
 				5FA271DA278D9A130086F184 /* Info.plist */,
+				5F425A18281AA255009185F4 /* Helper.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -188,6 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				5FD71CEA27CCFB8F009DF27D /* LoginScreen.storyboard */,
+				5F425A10281A9870009185F4 /* LoginScreenViewController.swift */,
+				5F425A14281A9A11009185F4 /* SignUpScreenViewController.swift */,
+				5F425A16281A9A21009185F4 /* MusicViewController.swift */,
 			);
 			path = "Basic AutoLayout";
 			sourceTree = "<group>";
@@ -388,10 +400,14 @@
 				5F5483EB280D262F00D6DE31 /* Constants.swift in Sources */,
 				5FFDBD1B2812CDD400023D52 /* EvenTableViewCell.swift in Sources */,
 				5FC88B4D2812EBA2000122EF /* ForthViewController.swift in Sources */,
+				5F425A19281AA255009185F4 /* Helper.swift in Sources */,
+				5F425A17281A9A21009185F4 /* MusicViewController.swift in Sources */,
+				5F425A11281A9871009185F4 /* LoginScreenViewController.swift in Sources */,
 				5FFDBD242812CDD500023D52 /* TableViewController.swift in Sources */,
 				5FC88B452812EBA2000122EF /* FirstCoordinator.swift in Sources */,
 				5FC88B432812EBA2000122EF /* HomeCoordinator.swift in Sources */,
 				5FC88B492812EBA2000122EF /* FirstViewController.swift in Sources */,
+				5F425A15281A9A11009185F4 /* SignUpScreenViewController.swift in Sources */,
 				5FFDBD1A2812CDD400023D52 /* CricketerModel.swift in Sources */,
 				5FC88B4A2812EBA2000122EF /* HomeViewController.swift in Sources */,
 				5FFDBD142812CDD400023D52 /* WebViewController.swift in Sources */,

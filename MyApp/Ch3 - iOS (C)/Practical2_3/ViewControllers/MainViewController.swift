@@ -49,6 +49,9 @@ class MainViewController: UIViewController {
     
     @objc func loadData() {
         print("Loading...")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1){
+            self.refreshData.endRefreshing()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
