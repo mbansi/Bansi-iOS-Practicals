@@ -27,5 +27,4 @@ class LoginViewController: UIViewController {
         tfPassword.layer.borderWidth = Constants.one
     }
     
-
 }
