@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-aw-3DL">
-                                <rect key="frame" x="94" y="118" width="187.5" height="31"/>
+                                <rect key="frame" x="132" y="118" width="111" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Ch3 - iOS (A)"/>
                                 <connections>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-J7-dhJ">
-                                <rect key="frame" x="93" y="164" width="189" height="31"/>
+                                <rect key="frame" x="132" y="164" width="111.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Ch3 - iOS (C)"/>
                                 <connections>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-ZM-KqC">
-                                <rect key="frame" x="93" y="214.5" width="189" height="31"/>
+                                <rect key="frame" x="131.5" y="214.5" width="112" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Ch3 - iOS (D)"/>
                                 <connections>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYQ-BO-adR">
-                                <rect key="frame" x="94" y="257.5" width="187.5" height="31"/>
+                                <rect key="frame" x="111" y="257.5" width="153" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Ch4 - Web Services"/>
                                 <connections>
@@ -52,25 +52,29 @@
                                     <segue destination="0wP-F9-6mr" kind="presentation" identifier="webServices" id="FTe-rk-n3n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddd-ye-NlR">
+                                <rect key="frame" x="115.5" y="303" width="144.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Ch5 - Architecture"/>
+                                <connections>
+                                    <action selector="openArchitecture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JsT-aD-RwA"/>
+                                    <segue destination="WaJ-7k-7Jv" kind="show" identifier="architecture" id="iOh-iP-Plp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ssd-8q-6XF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="centerY" secondItem="Ssd-8q-6XF" secondAttribute="centerY" multiplier="0.4" id="0rV-Up-cnj"/>
-                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="top" secondItem="Cf6-aw-3DL" secondAttribute="bottom" multiplier="1.1" id="48J-jg-ChZ"/>
-                            <constraint firstItem="dYQ-BO-adR" firstAttribute="top" secondItem="KhH-ZM-KqC" secondAttribute="bottom" multiplier="1.05" id="6TD-ie-VSP"/>
-                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="width" secondItem="XXd-J7-dhJ" secondAttribute="width" id="DFT-Co-1rt"/>
-                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="height" secondItem="XXd-J7-dhJ" secondAttribute="height" id="MX8-sg-v9c"/>
-                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="NEd-Ve-EHH"/>
-                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="width" secondItem="Cf6-aw-3DL" secondAttribute="width" multiplier="1.00901" id="Nov-CN-ih8"/>
-                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="QJc-sR-3mP"/>
-                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="height" secondItem="Cf6-aw-3DL" secondAttribute="height" id="QVf-YP-2Kw"/>
-                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="SEi-R7-gUQ"/>
-                            <constraint firstItem="dYQ-BO-adR" firstAttribute="leading" secondItem="Cf6-aw-3DL" secondAttribute="leading" id="SbY-bF-26d"/>
-                            <constraint firstItem="dYQ-BO-adR" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="f9i-oO-LFw"/>
-                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="width" secondItem="Ssd-8q-6XF" secondAttribute="width" multiplier="0.5" id="gIq-JI-mn4"/>
-                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="height" secondItem="Ssd-8q-6XF" secondAttribute="height" multiplier="0.0464768" id="kYB-5O-YJ6"/>
-                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="top" secondItem="XXd-J7-dhJ" secondAttribute="bottom" multiplier="1.1" id="rch-na-2q4"/>
+                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="top" secondItem="Cf6-aw-3DL" secondAttribute="bottom" constant="15" id="3Jf-eH-eiY"/>
+                            <constraint firstItem="dYQ-BO-adR" firstAttribute="top" secondItem="KhH-ZM-KqC" secondAttribute="bottom" constant="12" id="415-59-aTp"/>
+                            <constraint firstItem="Ddd-ye-NlR" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="8Ie-jR-wOa"/>
+                            <constraint firstItem="Ddd-ye-NlR" firstAttribute="top" secondItem="dYQ-BO-adR" secondAttribute="bottom" constant="14.5" id="Da1-7m-wok"/>
+                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="E6A-Oe-306"/>
+                            <constraint firstItem="KhH-ZM-KqC" firstAttribute="top" secondItem="XXd-J7-dhJ" secondAttribute="bottom" constant="19.5" id="HYO-Hz-Dfx"/>
+                            <constraint firstItem="dYQ-BO-adR" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="KVf-HX-8LK"/>
+                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="top" secondItem="Ssd-8q-6XF" secondAttribute="top" constant="118" id="MlS-Gm-fco"/>
+                            <constraint firstItem="XXd-J7-dhJ" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="oCh-cA-CUe"/>
+                            <constraint firstItem="Cf6-aw-3DL" firstAttribute="centerX" secondItem="Ssd-8q-6XF" secondAttribute="centerX" id="x5T-rv-RhN"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -115,6 +119,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETK-sC-LgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="257" y="168"/>
+        </scene>
+        <!--Architecture-->
+        <scene sceneID="qxs-qr-JMV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Architecture" id="WaJ-7k-7Jv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0K0-rw-4Pv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reF-1h-2ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="244"/>
         </scene>
     </scenes>
     <resources>

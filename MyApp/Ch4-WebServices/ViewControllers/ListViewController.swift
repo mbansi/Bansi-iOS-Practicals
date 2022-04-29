@@ -24,6 +24,9 @@ class ListViewController: UIViewController {
         tblContents.register(UINib(nibName: Constants.userCellName, bundle: nil), forCellReuseIdentifier: Constants.userCell)
         loader.startAnimating()
         loadJsonData()
+        tblContents.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        loader.startAnimating()
+        loadJsonData()
     }
     
     //MARK: - Actions
@@ -37,19 +40,26 @@ class ListViewController: UIViewController {
     func loadJsonData() {
         AF.request(Constants.delayUrl).response {
             response in
-            
-            guard let data = response.data else {
-                return
-            }
-            do {
-                let json = try JSONDecoder().decode(Response.self, from: data)
-                self.users = json.data
-                self.loader.stopAnimating()
-                self.tblContents.alpha = CGFloat(Constants.one)
-                self.tblContents.reloadData()
-            }
-            catch let error {
-                print(error)
+            AF.request("https://reqres.in/api/users?delay=3").response {
+                response in
+                print("Req: \(String(describing: response.request))")
+                print("data: \(response.result)")
+                print("Resp: \(String(describing: response.response))")
+                
+                guard let data = response.data else {
+                    return
+                }
+                do {
+                    let json = try JSONDecoder().decode(Response.self, from: data)
+                    self.users = json.data
+                    self.loader.stopAnimating()
+                    self.tblContents.alpha = CGFloat(Constants.one)
+                    self.tblContents.alpha = 1
+                    self.tblContents.reloadData()
+                }
+                catch let error {
+                    print(error)
+                }
             }
         }
     }
@@ -83,6 +93,6 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return Constants.tableRowHeight
     }
 }

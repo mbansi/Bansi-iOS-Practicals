@@ -20,7 +20,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemMint]
-            lblMessage.text = message
+        lblMessage.text = message
     }
     
     @IBAction func gotoHome(_ sender: UIButton) {

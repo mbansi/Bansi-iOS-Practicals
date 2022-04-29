@@ -28,7 +28,7 @@ class SingleUserViewController: UIViewController {
         loadSingleUserData()
     }
     
-    //MARK: - Function
+    //MARK: - Functions
     func loadSingleUserData() {
         guard let id = id else {
             return
@@ -45,26 +45,18 @@ class SingleUserViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let userdata = try? decoder.decode(SingleUser.self, from: responseData)
                 DispatchQueue.main.async {
-                    guard let userId = uSelf.id else {
+                    guard let userId = uSelf.id, let user = userdata?.data, let url = URL(string: user.avatar), let image = try? UIImage(data: Data(contentsOf: url))else {
                         return
                     }
+                
                     uSelf.lblId.text = String(userId)
-                    
-                    guard let user = userdata?.data else {
-                        return
-                    }
                     uSelf.lblName.text = user.firstName + " " + user.lastName
                     uSelf.lblEmail.text = user.email
-                    guard let url = URL(string: user.avatar) else {
-                        return
-                    }
-                    guard let image = try? UIImage(data: Data(contentsOf: url)) else {
-                        return
-                    }
                     uSelf.imgUser.image = image
                     uSelf.loader.stopAnimating()
                     uSelf.viewUser.alpha = CGFloat(Constants.one)
                 }
+                
             }
             dataTask.resume()
         }

@@ -8,14 +8,14 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    
     //MARK: - Variables
     @IBOutlet weak var tblContent: UITableView!
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let customView = UIView(frame: CGRect(x: .zero, y: .zero, width: Constants.width200, height: Constants.height50))
         customView.backgroundColor = UIColor.red
         tblContent.dataSource = self

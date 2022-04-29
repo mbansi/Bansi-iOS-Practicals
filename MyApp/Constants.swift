@@ -79,9 +79,14 @@ struct Constants {
     static let parameterName = "name"
     static let parameterJob = "job"
     
-
     static let statusCode = 200
     static let webServices = "webServices"
-//  Created by Bansi Mamtora on 20/04/22.
-
+    
+    static let architecture = "architecture"
+    static let six = 6
+    static let eight = 8
+    static let authentication = "Authentication"
+    static let loginVC = "LoginVC"
+    static let home = "Home"
+    static let dataVC = "DataVC"
 }

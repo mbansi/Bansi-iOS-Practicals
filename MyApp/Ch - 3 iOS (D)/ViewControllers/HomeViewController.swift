@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class HomeViewController: UIViewController, DataPassingDelegate {
  
     //MARK: - Outlets
