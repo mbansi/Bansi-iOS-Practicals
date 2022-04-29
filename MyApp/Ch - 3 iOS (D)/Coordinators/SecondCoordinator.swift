@@ -27,7 +27,7 @@ class SecondCoordinator: Coordinator {
             navController?.pushViewController(home, animated: true)
         }
     }
-
+    
     func finish() {
         navController?.popViewController(animated: true)
     }
@@ -35,5 +35,4 @@ class SecondCoordinator: Coordinator {
     func finishToRoot() {
         navController?.popToRootViewController(animated: true)
     }
-
 }

@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemPink]
     }
     
@@ -34,7 +34,7 @@ class FirstViewController: UIViewController {
         }
         coordinator?.gotoSecond(message)
     }
-
+    
     @IBAction func passToHome(sender: UIButton){
         guard let message = tfMessage.text else {
             return
@@ -42,10 +42,8 @@ class FirstViewController: UIViewController {
         delegate?.getData(message)
         coordinator?.finish()
     }
-       
+    
     @IBAction func gotoVC4(_ sender: UIButton) {
         coordinator?.gotoVC4()
     }
- }
-    
-
+}

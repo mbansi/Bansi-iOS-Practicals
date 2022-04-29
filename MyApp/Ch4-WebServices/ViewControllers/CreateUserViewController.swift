@@ -36,6 +36,7 @@ class CreateUserViewController: UIViewController {
             showAlert(invalidJob, alertInvalidJob)
         }
         createUserData()
+        showAlert(invalidName,alertInvalidName)
     }
     
     //MARK: - Functions
@@ -69,7 +70,7 @@ class CreateUserViewController: UIViewController {
                 }
                 break
             case .failure(let error):
-                print(error)
+                print("Error - \(error)")
             }
         }
     }

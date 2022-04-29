@@ -36,5 +36,4 @@ class HomeCoordinator: Coordinator {
     func finishToRoot() {
         //to pop to root view controller
     }
-
 }

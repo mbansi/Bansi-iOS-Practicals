@@ -34,7 +34,6 @@ class FirstCoordinator: Coordinator {
         }
     }
     
-
     func gotoVC4() {
         if let navController = navController {
             let forthCoordinator = ForthCoordinator(navController)
