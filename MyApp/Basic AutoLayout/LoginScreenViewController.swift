@@ -8,15 +8,15 @@
 import UIKit
 
 class LoginScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfEmail: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//        view.addGestureRecognizer(tap)
+        //        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        //        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
         self.dismissKeyboard(view)
         self.tfEmail.delegate = self
@@ -24,11 +24,14 @@ class LoginScreenViewController: UIViewController {
         tfEmail.keyboardType = .emailAddress
     }
     
-
+    
     @IBAction func loginAction(_ sender: UIButton) {
+        
         if let music = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "MusicViewController") as? MusicViewController {
             navigationController?.pushViewController(music, animated: true)
+            
         }
+        
     }
     
     @IBAction func loginWithFacebookAction(_ sender: UIButton) {
@@ -52,14 +55,9 @@ class LoginScreenViewController: UIViewController {
         case self.tfPassword:
             self.tfPassword.resignFirstResponder()
         default:
-            self.tfEmail.resignFirstResponder()
+            break
         }
     }
-
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
-    
 }
 
 extension LoginScreenViewController: UITextFieldDelegate {

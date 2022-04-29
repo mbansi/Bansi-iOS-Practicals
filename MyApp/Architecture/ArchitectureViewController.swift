@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ArchitectureVC: UIViewController {
+class ArchitectureViewController: UIViewController {
     
     //MARK: - Variables
     var appCoordinator: AppCoordinatorArchitecture?

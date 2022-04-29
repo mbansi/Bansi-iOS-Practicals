@@ -17,7 +17,8 @@ class LoginViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.dismissKeyboard(view)
+        
         tfEmail.layer.cornerRadius = 3
         tfEmail.layer.borderColor = UIColor.systemBlue.cgColor
         tfEmail.layer.borderWidth = Constants.one

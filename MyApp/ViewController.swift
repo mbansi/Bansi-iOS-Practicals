@@ -16,29 +16,34 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openAutoLayouts(_ sender: UIButton) {
-        if let login = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "LoginScreenViewController") as? LoginScreenViewController{
+        if let login = UIStoryboard(name: Constants.loginStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.loginScreenViewController) as? LoginScreenViewController{
             navigationController?.pushViewController(login, animated: true)
         }
-      //  performSegue(withIdentifier: Constants.basicAutoLayout , sender: self)
+    
     }
     
     @IBAction func btnUIComponents(_ sender: UIButton) {
-        if let mainComponents = UIStoryboard(name: "MainComponents", bundle: nil).instantiateViewController(withIdentifier: "MainComponentsViewController") as? MainComponentsViewController{
+        if let mainComponents = UIStoryboard(name: Constants.mainComponentsStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.mainComponentsViewController) as? MainComponentsViewController{
             navigationController?.pushViewController(mainComponents, animated: true)
         }
-  //      performSegue(withIdentifier: Constants.uiComponents, sender: self)
     }
 
     @IBAction func openNavigationController(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.navigation, sender: self)
+        if let navigation = UIStoryboard(name: Constants.navigationStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.homeViewController) as? HomeViewController {
+            navigationController?.pushViewController(navigation, animated: true)
+        }
     }
     
     @IBAction func openArchitecture(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.architecture, sender: self)
+        if let architecture = UIStoryboard(name: Constants.architectureStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.architectureViewController) as? ArchitectureViewController {
+            navigationController?.pushViewController(architecture, animated: true)
+        }
     }
     
     @IBAction func openWebServices(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.webServices, sender: self)
+        if let loginWeb = UIStoryboard(name: Constants.loginWebStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.loginWebViewController) as? LoginWebViewController {
+            navigationController?.pushViewController(loginWeb, animated: true)
+        }
     }
 }
 

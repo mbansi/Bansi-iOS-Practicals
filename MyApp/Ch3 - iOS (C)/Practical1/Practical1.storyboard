@@ -290,7 +290,7 @@
         <!--Task Page View Controller-->
         <scene sceneID="MmC-rZ-ToR">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="IZp-Mf-84g" customClass="TaskPageViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="TaskPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IZp-Mf-84g" customClass="TaskPageViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="itL-sH-bMT"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZI-U8-7WK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

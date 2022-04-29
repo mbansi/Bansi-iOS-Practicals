@@ -52,7 +52,7 @@ struct Constants {
     static let navigation = "navigation"
     static let navigationController = "Navigation"
     static let secondViewController = "secondViewController"
-    static let homeViewController = "homeViewController"
+//    static let homeViewController = "homeViewController"
     static let firstViewController = "firstViewController"
     static let forthViewController = "forthViewController"
     static let main = "Main"
@@ -83,11 +83,21 @@ struct Constants {
     static let statusCode = 200
     static let webServices = "webServices"
     
-    static let architecture = "architecture"
+    static let architectureStoryboard = "Architecture"
+    static let architectureViewController = "ArchitectureViewController"
     static let six = 6
     static let eight = 8
     static let authentication = "Authentication"
     static let loginVC = "LoginVC"
     static let home = "Home"
     static let dataVC = "DataVC"
+    
+    static let loginStoryboard = "LoginScreen"
+    static let loginScreenViewController = "LoginScreenViewController"
+    static let mainComponentsStoryboard = "MainComponents"
+    static let mainComponentsViewController = "MainComponentsViewController"
+    static let navigationStoryboard = "Navigation"
+    static let homeViewController = "HomeViewController"
+    static let loginWebStoryboard = "Login"
+    static let loginWebViewController = "LoginWebViewController"
 }

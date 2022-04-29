@@ -25,7 +25,6 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Task 1"/>
                                         <connections>
                                             <action selector="openTask1:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bc2-9z-MgJ"/>
-                                            <segue destination="Zjh-5A-jA5" kind="presentation" identifier="practical1" modalPresentationStyle="fullScreen" id="a2W-eM-jaQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-Be-l2Q">
@@ -34,7 +33,6 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Task 2/3"/>
                                         <connections>
                                             <action selector="openTask2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9nD-uM-Pgd"/>
-                                            <segue destination="Tqs-G4-fve" kind="presentation" identifier="practical2" modalPresentationStyle="fullScreen" id="JpM-MJ-83E"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFk-2T-bjT">
@@ -42,7 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Table View"/>
                                         <connections>
-                                            <action selector="openTask2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qq4-gh-Siu"/>
+                                            <action selector="openTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gnk-Z3-dXX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,22 +58,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="652" y="35.532233883058474"/>
-        </scene>
-        <!--Practical1-->
-        <scene sceneID="c99-3P-lVy">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Practical1" storyboardName="Practical1" id="Zjh-5A-jA5" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hZc-cg-N4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1321.5999999999999" y="38.680659670164921"/>
-        </scene>
-        <!--Practical2_3-->
-        <scene sceneID="kmO-C8-DLx">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Practical2_3" id="Tqs-G4-fve" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5MM-Pf-z55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1319.2" y="125.93703148425789"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xec-zG-LdP">

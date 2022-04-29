@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  WebViewController.swift
 //  MyApp
 //
 //  Created by Bansi Mamtora on 04/03/22.
@@ -17,19 +17,29 @@ class WebViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.startAnimating()
-        displayActivityIndicator()
+        webView.navigationDelegate = self
+        
+        loadPage()
     }
     
-    //MARK: - Functions
-    func displayActivityIndicator() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
-            guard let url = URL(string: Constants.googleUrl) else {
-                return
-            }
-            let urlRequest = URLRequest(url: url)
-            self.webView.load(urlRequest)
-            self.activityIndicator.stopAnimating()
+    func loadPage() {
+        guard let url = URL(string: Constants.googleUrl) else {
+            return
         }
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
+    }
+}
+
+extension WebViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        activityIndicator.startAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        webView.alpha = Constants.one
+        activityIndicator.alpha = .zero
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.stopAnimating()
     }
 }

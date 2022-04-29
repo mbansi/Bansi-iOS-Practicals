@@ -13,7 +13,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="flD-Gg-Zwj">
             <objects>
-                <tabBarController id="B23-VV-6c7" customClass="TabBarViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="B23-VV-6c7" customClass="TabBarViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="6bT-ux-Obr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -33,7 +33,7 @@
         <!--Home-->
         <scene sceneID="6Fz-mO-Zcd">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="bNU-y4-pKQ" customClass="MainViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="bNU-y4-pKQ" customClass="MainViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oFn-8w-mia">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,13 +46,13 @@
                                 </connections>
                             </searchBar>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="qIo-U9-HUD">
-                                <rect key="frame" x="140.5" y="61" width="94" height="32"/>
+                                <rect key="frame" x="140.5" y="53.5" width="94" height="32"/>
                                 <connections>
                                     <action selector="stepperAction:" destination="bNU-y4-pKQ" eventType="valueChanged" id="lTC-UF-Pg8"/>
                                 </connections>
                             </stepper>
                             <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gTk-55-s3o">
-                                <rect key="frame" x="0.0" y="108" width="375" height="402"/>
+                                <rect key="frame" x="0.0" y="85.5" width="375" height="472"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="bNU-y4-pKQ" id="mfQ-cC-wOV"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E31-He-Gdi">
-                                <rect key="frame" x="19" y="123" width="337.5" height="433.5"/>
+                                <rect key="frame" x="0.0" y="85.5" width="375" height="472"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="aGJ-fJ-2qa">
                                     <size key="itemSize" width="120" height="120"/>
@@ -110,7 +110,7 @@
                                 </connections>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7KZ-Yf-BZ0">
-                                <rect key="frame" x="19" y="556" width="337.5" height="32"/>
+                                <rect key="frame" x="19" y="557.5" width="337.5" height="32"/>
                                 <segments>
                                     <segment title="Grid View"/>
                                     <segment title="List View"/>
@@ -123,23 +123,22 @@
                         <viewLayoutGuide key="safeArea" id="r8f-3v-F5m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="centerY" secondItem="r8f-3v-F5m" secondAttribute="centerY" multiplier="1.85" id="5h4-wE-x2F"/>
+                            <constraint firstItem="gTk-55-s3o" firstAttribute="top" secondItem="qIo-U9-HUD" secondAttribute="bottom" id="4qf-0P-ShM"/>
                             <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="centerX" secondItem="r8f-3v-F5m" secondAttribute="centerX" id="6Gr-s9-G6I"/>
-                            <constraint firstItem="gTk-55-s3o" firstAttribute="height" secondItem="r8f-3v-F5m" secondAttribute="height" multiplier="0.65" id="9zD-fw-Gf9"/>
-                            <constraint firstItem="gTk-55-s3o" firstAttribute="centerY" secondItem="r8f-3v-F5m" secondAttribute="centerY" id="FGc-9N-Bxz"/>
+                            <constraint firstItem="r8f-3v-F5m" firstAttribute="trailing" secondItem="E31-He-Gdi" secondAttribute="trailing" id="EYa-5L-Lux"/>
+                            <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="top" secondItem="gTk-55-s3o" secondAttribute="bottom" id="IUI-J6-Yns"/>
                             <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="width" secondItem="r8f-3v-F5m" secondAttribute="width" multiplier="0.9" id="Wlk-0o-pmP"/>
+                            <constraint firstItem="r8f-3v-F5m" firstAttribute="trailing" secondItem="gTk-55-s3o" secondAttribute="trailing" id="a16-YC-oMh"/>
                             <constraint firstItem="LY6-VG-6cJ" firstAttribute="centerX" secondItem="oFn-8w-mia" secondAttribute="centerX" id="dDB-Ct-j2A"/>
                             <constraint firstItem="LY6-VG-6cJ" firstAttribute="leading" secondItem="r8f-3v-F5m" secondAttribute="leading" id="dGT-au-tPu"/>
-                            <constraint firstAttribute="centerX" secondItem="E31-He-Gdi" secondAttribute="centerX" id="fw6-56-BpZ"/>
-                            <constraint firstItem="gTk-55-s3o" firstAttribute="width" secondItem="r8f-3v-F5m" secondAttribute="width" id="gHs-4R-Yrw"/>
-                            <constraint firstItem="E31-He-Gdi" firstAttribute="centerY" secondItem="r8f-3v-F5m" secondAttribute="centerY" multiplier="1.1" id="kSH-af-MoO"/>
+                            <constraint firstItem="E31-He-Gdi" firstAttribute="leading" secondItem="r8f-3v-F5m" secondAttribute="leading" id="heh-iq-XeO"/>
+                            <constraint firstItem="r8f-3v-F5m" firstAttribute="bottom" secondItem="7KZ-Yf-BZ0" secondAttribute="bottom" multiplier="1.05" id="iOR-3X-Bir"/>
                             <constraint firstItem="LY6-VG-6cJ" firstAttribute="top" secondItem="r8f-3v-F5m" secondAttribute="top" multiplier="1.2" id="o9w-50-Q9D"/>
-                            <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="height" secondItem="r8f-3v-F5m" secondAttribute="height" multiplier="0.0501618" id="qyN-zy-Y15"/>
-                            <constraint firstItem="qIo-U9-HUD" firstAttribute="top" secondItem="LY6-VG-6cJ" secondAttribute="bottom" multiplier="1.2" id="txw-Yp-UBy"/>
-                            <constraint firstItem="gTk-55-s3o" firstAttribute="centerX" secondItem="r8f-3v-F5m" secondAttribute="centerX" id="wW0-vK-Bxn"/>
-                            <constraint firstItem="E31-He-Gdi" firstAttribute="height" secondItem="oFn-8w-mia" secondAttribute="height" multiplier="0.65" id="y4e-If-eQV"/>
+                            <constraint firstItem="gTk-55-s3o" firstAttribute="leading" secondItem="r8f-3v-F5m" secondAttribute="leading" id="rzR-P0-VfI"/>
+                            <constraint firstItem="qIo-U9-HUD" firstAttribute="top" secondItem="LY6-VG-6cJ" secondAttribute="bottom" multiplier="1.05" id="txw-Yp-UBy"/>
+                            <constraint firstItem="7KZ-Yf-BZ0" firstAttribute="top" secondItem="E31-He-Gdi" secondAttribute="bottom" id="wpk-3N-HkQ"/>
                             <constraint firstItem="qIo-U9-HUD" firstAttribute="centerX" secondItem="r8f-3v-F5m" secondAttribute="centerX" id="zGO-jH-wBf"/>
-                            <constraint firstItem="E31-He-Gdi" firstAttribute="width" secondItem="oFn-8w-mia" secondAttribute="width" multiplier="0.9" id="zs8-Bl-EhZ"/>
+                            <constraint firstItem="E31-He-Gdi" firstAttribute="top" secondItem="qIo-U9-HUD" secondAttribute="bottom" id="zbt-9g-x6g"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="4Sb-Ch-4Qq"/>

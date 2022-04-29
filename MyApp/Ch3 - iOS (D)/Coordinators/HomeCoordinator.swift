@@ -16,7 +16,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        if let home = UIStoryboard(name: Constants.navigationController, bundle: nil).instantiateViewController(withIdentifier: Constants.homeViewController) as? HomeViewController {
+        if let home = UIStoryboard(name: Constants.navigationController, bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
             home.coordinator = self
             navController?.pushViewController(home, animated: true)
         }

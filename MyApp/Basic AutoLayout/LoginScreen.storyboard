@@ -51,7 +51,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aU-fk-qbP">
                                         <rect key="frame" x="0.0" y="238.5" width="319" height="44.5"/>
-                                        <color key="backgroundColor" red="0.26093313943171959" green="0.25262364999780423" blue="0.59773316046204228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.31471446866691716" green="0.45549670024872357" blue="0.80055051861387305" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="facebook (2)" imagePlacement="leading" title="Login with Facebook" imagePadding="0.0" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -63,7 +63,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj7-i5-h7r">
                                         <rect key="frame" x="0.0" y="298" width="319" height="44.5"/>
-                                        <color key="backgroundColor" red="0.26093313940000001" green="0.25262364999999998" blue="0.59773316050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="google" title="Login with Google" imagePadding="20" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -141,25 +141,25 @@
                                 <rect key="frame" x="37.5" y="131" width="300" height="433.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LaH-Aw-qVO">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="41.5"/>
                                         <color key="backgroundColor" red="1" green="0.83750980870000002" blue="0.85133346229999995" alpha="0.2532178866" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1JY-Yd-jYD">
-                                        <rect key="frame" x="0.0" y="58.5" width="300" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="56.5" width="300" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.83750980870000002" blue="0.85133346229999995" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVR-qG-kjK">
-                                        <rect key="frame" x="0.0" y="117" width="300" height="44"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="300" height="41.5"/>
                                         <color key="backgroundColor" red="1" green="0.83750980870000002" blue="0.85133346229999995" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pt-EA-WDP">
-                                        <rect key="frame" x="0.0" y="176" width="300" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="170" width="300" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
                                         <connections>
@@ -167,22 +167,20 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Forgot Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iA5-pm-EPv">
-                                        <rect key="frame" x="0.0" y="230.5" width="300" height="19"/>
+                                        <rect key="frame" x="0.0" y="223" width="300" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-MF-X2w">
-                                        <rect key="frame" x="0.0" y="264.5" width="300" height="39.5"/>
-                                        <color key="backgroundColor" red="0.26093313940000001" green="0.25262364999999998" blue="0.59773316050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="256" width="300" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="facebook (2)" imagePlacement="leading" title="Sign up with Facebook" imagePadding="20" titleAlignment="leading">
                                             <color key="baseBackgroundColor" red="0.25751599670000003" green="0.40258812900000002" blue="0.69833773369999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blQ-8Z-ShA">
-                                        <rect key="frame" x="0.0" y="319" width="300" height="49"/>
-                                        <color key="backgroundColor" red="0.26093313940000001" green="0.25262364999999998" blue="0.59773316050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="309" width="300" height="46.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="google" title="Sign up with Google" imagePadding="20" titleAlignment="leading">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -190,7 +188,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-Y2-G91">
-                                        <rect key="frame" x="0.0" y="383" width="300" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="370.5" width="300" height="63"/>
                                         <attributedString key="attributedText">
                                             <fragment content="By signing up you accept the">
                                                 <attributes>
