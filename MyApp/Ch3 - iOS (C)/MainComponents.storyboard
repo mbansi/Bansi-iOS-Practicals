@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RHN-e5-cEy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-Dl-QeH">
-                                <rect key="frame" x="94" y="294.5" width="187.5" height="78"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-Dl-QeH">
+                                <rect key="frame" x="141" y="304" width="93.5" height="103"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiM-tf-D0y">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Task 1"/>
                                         <connections>
@@ -29,12 +29,20 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-Be-l2Q">
-                                        <rect key="frame" x="0.0" y="50" width="187.5" height="28"/>
+                                        <rect key="frame" x="0.0" y="36" width="93.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Task 2/3"/>
                                         <connections>
                                             <action selector="openTask2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9nD-uM-Pgd"/>
                                             <segue destination="Tqs-G4-fve" kind="presentation" identifier="practical2" modalPresentationStyle="fullScreen" id="JpM-MJ-83E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFk-2T-bjT">
+                                        <rect key="frame" x="0.0" y="72" width="93.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Table View"/>
+                                        <connections>
+                                            <action selector="openTask2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qq4-gh-Siu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -43,16 +51,15 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jlK-Dl-QeH" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.5" id="Cqs-UJ-j8h"/>
-                            <constraint firstItem="jlK-Dl-QeH" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.117359" id="dIJ-FA-fke"/>
                             <constraint firstItem="jlK-Dl-QeH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="jyN-ab-Btb"/>
                             <constraint firstItem="jlK-Dl-QeH" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="q8J-aC-uEf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="D9n-sJ-Pzm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="36"/>
+            <point key="canvasLocation" x="652" y="35.532233883058474"/>
         </scene>
         <!--Practical1-->
         <scene sceneID="c99-3P-lVy">
@@ -60,7 +67,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Practical1" storyboardName="Practical1" id="Zjh-5A-jA5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZc-cg-N4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="39"/>
+            <point key="canvasLocation" x="1321.5999999999999" y="38.680659670164921"/>
         </scene>
         <!--Practical2_3-->
         <scene sceneID="kmO-C8-DLx">
@@ -68,7 +75,25 @@
                 <viewControllerPlaceholder storyboardName="Practical2_3" id="Tqs-G4-fve" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MM-Pf-z55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="126"/>
+            <point key="canvasLocation" x="1319.2" y="125.93703148425789"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xec-zG-LdP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RHN-e5-cEy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="noe-TO-CSO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="863-FZ-DPl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fN1-ql-Bqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>

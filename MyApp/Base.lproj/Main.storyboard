@@ -30,7 +30,6 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Ch3 - iOS (C)"/>
                                 <connections>
                                     <action selector="btnUIComponents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5z-D1-rVU"/>
-                                    <segue destination="2fE-rO-OdY" kind="presentation" identifier="uiComponents" modalPresentationStyle="fullScreen" id="nzh-et-046"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-ZM-KqC">
@@ -65,16 +64,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="652" y="-58.020989505247378"/>
-        </scene>
-        <!--MainComponents-->
-        <scene sceneID="KkJ-rY-QTn">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="mainComponents" storyboardName="MainComponents" id="2fE-rO-OdY" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="vlu-C7-jpo"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RpV-GM-CXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1491.2" y="-58.47076461769116"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="ulU-gQ-NaB">

@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnUIComponents(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.uiComponents, sender: self)
+        if let mainComponents = UIStoryboard(name: "MainComponents", bundle: nil).instantiateViewController(withIdentifier: "MainComponentsViewController") as? MainComponentsViewController{
+            navigationController?.pushViewController(mainComponents, animated: true)
+        }
+  //      performSegue(withIdentifier: Constants.uiComponents, sender: self)
     }
 
     @IBAction func openNavigationController(_ sender: UIButton) {
