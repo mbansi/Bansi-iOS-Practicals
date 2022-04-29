@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: Constants.navigation, sender: self)
     }
     
+    @IBAction func openArchitecture(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.architecture, sender: self)
+    }
+    
     @IBAction func openWebServices(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.webServices, sender: self)
     }

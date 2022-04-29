@@ -31,5 +31,4 @@ class MainCoordinator: Coordinator {
     func finishToRoot() {
         //to pop to rootview controller
     }
-
 }

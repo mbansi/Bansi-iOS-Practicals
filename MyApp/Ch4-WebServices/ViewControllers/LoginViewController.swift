@@ -7,7 +7,9 @@
 
 import UIKit
 
-class LoginWebViewController: UIViewController {
+
+
+class LoginViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var tfPassword: UITextField!
@@ -16,35 +18,29 @@ class LoginWebViewController: UIViewController {
     
     //MARK: - Variables
     var responseToken: String?
-    let noEmail = NSLocalizedString("No email", comment: "")
-    let alertNoEmail = NSLocalizedString("Please enter your email", comment: "")
-    let invalidEmail = NSLocalizedString("Invalid Email", comment: "")
-    let alertInvalidEmail = NSLocalizedString("Please enter a proper email", comment: "")
-    let noPassword = NSLocalizedString("No password", comment: "")
-    let alertNoPassword = NSLocalizedString("Please enter your password", comment: "")
-    let alertOK = NSLocalizedString("OK", comment: "")
-    let email = "eve.holt@reqres.in"
-    let password = "cityslicka"
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     //MARK: - Actions
     @IBAction func loginUserAction(_ sender: Any) {
-        let userModel = LoginUser(email: tfUsername.text ?? email, password: tfPassword.text ?? password)
+        
+        let userModel = LoginUser(email: tfUsername.text ?? "eve.holt@reqres.in", password: tfPassword.text ?? "cityslicka")
+        
         if tfUsername.text?.isEmpty == true {
-            showAlert(noEmail, alertNoEmail)
+            showAlert("No email", "Please enter your email")
         }
         guard let email = tfUsername.text else {
             return
         }
         if isValidEmail(email) == false {
-            showAlert(invalidEmail, alertInvalidEmail)
+            showAlert("Invalid Email", "Please enter a proper email")
         }
         if tfPassword.text?.isEmpty == true {
-            showAlert(noPassword, alertNoPassword)
+            showAlert("No password", "Please enter your password")
         }
         loginUser(userModel)
     }
@@ -52,19 +48,20 @@ class LoginWebViewController: UIViewController {
     //MARK: - Functions
     func showAlert(_ title: String,_ message: String){
         let alert = UIAlertController(title: title, message:   message , preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: alertOK, style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
     func loginUser(_ user: LoginUser) {
-        if let url = URL(string: Constants.url) {
+        if let url = URL(string: "https://reqres.in/api/login") {
             var urlRequest = URLRequest(url: url)
-            urlRequest.httpMethod = Constants.post
-            urlRequest.addValue(Constants.applicationJson, forHTTPHeaderField: Constants.contentType)
+            urlRequest.httpMethod = "POST"
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
             do {
                 urlRequest.httpBody = try JSONEncoder().encode(user)
             } catch let error {
-                print(error.localizedDescription)
+                print("Error in Json encoding - \(error.localizedDescription)")
             }
             
             let dataTask = URLSession.shared.dataTask(with: urlRequest){ (data, urlResponse,error) in
@@ -73,12 +70,13 @@ class LoginWebViewController: UIViewController {
                 }
                 
                 if let httpResponse = urlResponse as? HTTPURLResponse {
-                    print(httpResponse.statusCode)
+                    print("error \(httpResponse.statusCode)")
                     
-                    if httpResponse.statusCode == Constants.statusCode {
+                    if httpResponse.statusCode == 200 {
                         DispatchQueue.main.async {
-                            if let listVc = UIStoryboard(name: Constants.login, bundle: nil).instantiateViewController(withIdentifier: Constants.listViewController) as? ListViewController {
-                                    self.navigationController?.pushViewController(listVc, animated: true)
+                            if let listVc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "ListViewController") as? ListViewController {
+                                
+                                self.navigationController?.pushViewController(listVc, animated: true)
                             }
                         }
                     }
@@ -87,23 +85,26 @@ class LoginWebViewController: UIViewController {
                 do {
                     let decoder = JSONDecoder()
                     let userResponse = try decoder.decode(LoginUserResponse.self, from: responseData)
-                    print(String(describing: userResponse.token))
+                    print("Token: \(String(describing: userResponse.token))")
                     
                     DispatchQueue.main.async {
                         self.lblResponse.text = userResponse.token
                     }
                     
                 } catch let error {
-                    print(error)
+                    print("Error - \(error)")
                 }
+                
             }
             dataTask.resume()
         }
     }
     
     func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = Constants.emailRegex
-        let emailPred = NSPredicate(format: Constants.matchEmail, emailRegEx)
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
+    
+    
 }
