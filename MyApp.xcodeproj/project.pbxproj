@@ -79,7 +79,6 @@
 		5FFDBD1E2812CDD400023D52 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBD012812CDD400023D52 /* TableViewCell.xib */; };
 		5FFDBD1F2812CDD400023D52 /* Practical1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBD022812CDD400023D52 /* Practical1.storyboard */; };
 		5FFDBD202812CDD400023D52 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD042812CDD400023D52 /* CustomTextField.swift */; };
-		5FFDBD212812CDD400023D52 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD052812CDD400023D52 /* CustomTextView.swift */; };
 		5FFDBD222812CDD400023D52 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD072812CDD400023D52 /* SignUpViewController.swift */; };
 		5FFDBD232812CDD400023D52 /* TaskPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD082812CDD400023D52 /* TaskPageViewController.swift */; };
 		5FFDBD242812CDD500023D52 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBD092812CDD400023D52 /* TableViewController.swift */; };
@@ -164,7 +163,6 @@
 		5FFDBD012812CDD400023D52 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5FFDBD022812CDD400023D52 /* Practical1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Practical1.storyboard; sourceTree = "<group>"; };
 		5FFDBD042812CDD400023D52 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		5FFDBD052812CDD400023D52 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		5FFDBD072812CDD400023D52 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5FFDBD082812CDD400023D52 /* TaskPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPageViewController.swift; sourceTree = "<group>"; };
 		5FFDBD092812CDD400023D52 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -560,7 +558,6 @@
 			isa = PBXGroup;
 			children = (
 				5FFDBD042812CDD400023D52 /* CustomTextField.swift */,
-				5FFDBD052812CDD400023D52 /* CustomTextView.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -742,7 +739,6 @@
 				5F6A05D8281BEA57008A238E /* LoginVC.swift in Sources */,
 				5FFDBD252812CDD500023D52 /* LoginViewController.swift in Sources */,
 				5FC88B412812EBA2000122EF /* AppCoordinator.swift in Sources */,
-				5FFDBD212812CDD400023D52 /* CustomTextView.swift in Sources */,
 				5FA271CF278D9A120086F184 /* SceneDelegate.swift in Sources */,
 				5FC88B4C2812EBA2000122EF /* SecondViewController.swift in Sources */,
 				5F6A05CA281BEA57008A238E /* User.swift in Sources */,

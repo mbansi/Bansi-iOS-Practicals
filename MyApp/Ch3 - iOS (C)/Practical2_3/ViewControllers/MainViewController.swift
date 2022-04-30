@@ -131,7 +131,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
 //MARK: - Table DataSource
 extension MainViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return Int(Constants.one)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

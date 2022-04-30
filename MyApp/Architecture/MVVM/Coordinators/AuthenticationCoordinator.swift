@@ -26,7 +26,7 @@ class AuthenticationCoordinator: CoordinatorArchitecture {
     }
     
     func goToSignUp() {
-        guard let signUpVC = UIStoryboard(name: "Authentication", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else {
+        guard let signUpVC = UIStoryboard(name: Constants.authentication, bundle: nil).instantiateViewController(withIdentifier: Constants.signUpVC) as? SignUpVC else {
             return
         }
         signUpVC.coordinator = self

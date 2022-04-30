@@ -21,7 +21,7 @@ class LoginVC: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.dismissKeyboard(view)
         bindViewModel()
     }
     

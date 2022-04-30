@@ -35,7 +35,7 @@ class ThirdViewController: UIViewController {
 //MARK: - Extension
 extension ThirdViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return Int(Constants.one)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,5 +47,5 @@ extension ThirdViewController: UITableViewDataSource {
 }
 
 extension ThirdViewController: UITableViewDelegate {
-    
+    //to be implemented
 }

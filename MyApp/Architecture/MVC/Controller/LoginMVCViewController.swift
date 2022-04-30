@@ -16,8 +16,7 @@ class LoginMVCViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        self.dismissKeyboard(view)
     }
     
     //MARK: - IBActions

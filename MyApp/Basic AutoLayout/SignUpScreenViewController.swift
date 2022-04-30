@@ -25,7 +25,7 @@ class SignUpScreenViewController: UIViewController {
     }
     
     @IBAction func signUpAction(_ sender: UIButton) {
-        showAlert("Success", self)
+        showAlert(NSLocalizedString("Success", comment: ""), self)
     }
     
     private func switchField(_ textField: UITextField) {
@@ -37,7 +37,7 @@ class SignUpScreenViewController: UIViewController {
         case self.tfPassword:
             self.tfPassword.resignFirstResponder()
         default:
-            self.tfFullName.resignFirstResponder()
+            break
         }
     }
     

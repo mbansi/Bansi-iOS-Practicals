@@ -24,6 +24,7 @@ class CreateUserViewController: UIViewController {
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
+        self.dismissKeyboard(view)
         super.viewDidLoad()
     }
     
@@ -44,6 +45,17 @@ class CreateUserViewController: UIViewController {
         let alert = UIAlertController(title: title, message:   message , preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: alertOK, style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.tfName:
+            self.tfJob.becomeFirstResponder()
+        case self.tfJob:
+            self.tfJob.resignFirstResponder()
+        default:
+            break
+        }
     }
     
     func createUserData() {
@@ -73,5 +85,12 @@ class CreateUserViewController: UIViewController {
                 print("Error - \(error)")
             }
         }
+    }
+}
+
+extension CreateUserViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
     }
 }

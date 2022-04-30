@@ -28,7 +28,6 @@ class MapViewController: UIViewController {
         addCustomAnnotation()
     }
     
-    
     //MARK: - Functions
     func initialiser() {
         pickerView.delegate = self
@@ -131,7 +130,6 @@ extension MapViewController: CLLocationManagerDelegate {
 extension MapViewController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is CustomAnnotation {
-//            let reuseId = Constants.customAnnotation
             var customView = mapView.dequeueReusableAnnotationView(withIdentifier: Constants.customAnnotation)
             if customView == nil {
                 customView = MKAnnotationView(annotation: annotation, reuseIdentifier: Constants.customAnnotation)

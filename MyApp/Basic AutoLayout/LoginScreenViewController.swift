@@ -15,9 +15,6 @@ class LoginScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        //        view.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view.
         self.dismissKeyboard(view)
         self.tfEmail.delegate = self
         self.tfPassword.delegate = self
@@ -27,7 +24,7 @@ class LoginScreenViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: UIButton) {
         
-        if let music = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "MusicViewController") as? MusicViewController {
+        if let music = UIStoryboard(name: Constants.loginStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.musicViewController) as? MusicViewController {
             navigationController?.pushViewController(music, animated: true)
             
         }
@@ -35,15 +32,15 @@ class LoginScreenViewController: UIViewController {
     }
     
     @IBAction func loginWithFacebookAction(_ sender: UIButton) {
-        showAlert( "Facebook Account Required",self)
+        showAlert( NSLocalizedString("Facebook Account Required", comment: ""),self)
     }
     
     @IBAction func loginWithGoogleAction(_ sender: Any) {
-        showAlert( "Google Account Required",self)
+        showAlert(NSLocalizedString("Google Account Required", comment: "") ,self)
     }
     
     @IBAction func signUpAction(_ sender: UIButton) {
-        if let signUp = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(withIdentifier: "SignUpScreenViewController") as? SignUpScreenViewController {
+        if let signUp = UIStoryboard(name: Constants.loginStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.signUpScreenViewController) as? SignUpScreenViewController {
             navigationController?.pushViewController(signUp, animated: true)
         }
     }

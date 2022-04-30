@@ -13,10 +13,12 @@ struct Constants {
     static let basicAutoLayout = "basicAutoLayout"
     
     //MARK: - Chapter 3 - UI Components
-    static let practical1 = "practical1"
-    static let practical2 = "practical2"
+    static let practical23Storyboard = "Practical2_3"
     static let practical1StoryBoard = "Practical1"
     static let tableViewCellName = "TableViewCell"
+    static let tabBarViewController = "TabBarViewController"
+    static let tableViewController =  "TableViewController"
+    static let taskPageViewController = "TaskPageViewController"
     static let tableViewCell = "tableViewCell"
     static let checked = "checked"
     static let customAnnotation = "CustomAnnotation"
@@ -75,6 +77,7 @@ struct Constants {
     static let perPage = "per_page"
     static let get = "GET"
     static let totalPages = "total_pages"
+    
     static let applicationJson = "application/json"
     static let contentType = "Content-Type"
     static let parameterName = "name"
@@ -100,4 +103,8 @@ struct Constants {
     static let homeViewController = "HomeViewController"
     static let loginWebStoryboard = "Login"
     static let loginWebViewController = "LoginWebViewController"
+    
+    static let musicViewController = "MusicViewController"
+    static let signUpScreenViewController = "SignUpScreenViewController"
+    static let signUpVC = "SignUpVC"
 }

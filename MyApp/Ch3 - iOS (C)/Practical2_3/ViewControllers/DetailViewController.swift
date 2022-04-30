@@ -23,7 +23,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         lblName.text = name
         imgCricketer.image = UIImage(named: image)
-        // Do any additional setup after loading the view.
     }
 
     //MARK: - Actions
@@ -35,5 +34,4 @@ class DetailViewController: UIViewController {
             stackView.axis = .vertical
         }
     }
-    
 }

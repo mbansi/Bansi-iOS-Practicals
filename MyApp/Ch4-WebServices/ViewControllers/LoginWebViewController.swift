@@ -29,6 +29,7 @@ class LoginWebViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dismissKeyboard(view)
     }
     
     //MARK: - Actions
@@ -54,6 +55,17 @@ class LoginWebViewController: UIViewController {
         let alert = UIAlertController(title: title, message:   message , preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: alertOK, style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.tfUsername:
+            self.tfPassword.becomeFirstResponder()
+        case self.tfPassword:
+            self.tfPassword.resignFirstResponder()
+        default:
+            break
+        }
     }
     
     func loginUser(_ user: LoginUser) {
@@ -105,5 +117,12 @@ class LoginWebViewController: UIViewController {
         let emailRegEx = Constants.emailRegex
         let emailPred = NSPredicate(format: Constants.matchEmail, emailRegEx)
         return emailPred.evaluate(with: email)
+    }
+}
+
+extension LoginWebViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
     }
 }

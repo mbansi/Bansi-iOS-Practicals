@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var imgUser: UIImageView!
     @IBOutlet weak var tfEmail: CustomTextField!
-    @IBOutlet weak var tvBio: CustomTextView!
+    @IBOutlet weak var tvBio: UITextView!
     @IBOutlet weak var tfPassword: CustomTextField!
     @IBOutlet weak var lblAge: UILabel!
     @IBOutlet weak var ageSlider: UISlider!
@@ -28,8 +28,6 @@ class SignUpViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//        view.addGestureRecognizer(tap)
         
         self.dismissKeyboard(view)
         imgUser.layer.cornerRadius = 40
@@ -89,13 +87,9 @@ class SignUpViewController: UIViewController {
         case self.tvBio:
             self.tvBio.resignFirstResponder()
         default:
-            self.tfEmail.resignFirstResponder()
+            break
         }
     }
-//
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
 }
 
 extension SignUpViewController: UITextFieldDelegate {

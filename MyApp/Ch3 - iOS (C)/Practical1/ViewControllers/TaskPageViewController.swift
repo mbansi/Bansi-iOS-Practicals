@@ -19,7 +19,6 @@ class TaskPageViewController: UIPageViewController {
         super.viewDidLoad()
         self.delegate = self
         self.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {

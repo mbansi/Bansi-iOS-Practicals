@@ -33,5 +33,4 @@ class LocationModel: NSObject{
                  LocationModel(NSLocalizedString("Kerala", comment: ""), Constants.keralaLattitude, Constants.keralaLongitude),
                  LocationModel(NSLocalizedString("Shimla", comment: ""), Constants.shimlaLattitude, Constants.shimlaLongitude)]
     }
-    
 }
